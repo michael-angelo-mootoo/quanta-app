@@ -5,6 +5,7 @@ import PIL.Image
 import time
 import customtkinter
 from tkinter import *
+
 class ToolTip(object):
     def __init__(self, widget):
         self.bw = None
@@ -64,7 +65,7 @@ customtkinter.set_appearance_mode("Dark")
 customtkinter.set_default_color_theme("blue")
 customtkinter.set_widget_scaling(0.8)
 
-class Proced_REG(customtkinter.CTk):
+class Quanta_app(customtkinter.CTk):
     def __init__(self, **kwargs):
         # Initial Variable Declartion
         super().__init__(**kwargs)
@@ -85,7 +86,7 @@ class Proced_REG(customtkinter.CTk):
         self.labelText = None
         self.st = 0
         self.state("zoomed")
-        self.title("Quanta")
+        self.title("Quanta Computational Statistics Toolkit")
 
         # Generates the cosmetics for the main framework
         self.sidebar = customtkinter.CTkFrame(self, width=305, height=1200, corner_radius=5)
@@ -167,6 +168,6 @@ class Proced_REG(customtkinter.CTk):
         self.label.grid(padx=20, pady=(20, 100)); self.label.place(x=205, y=98, anchor="s")
 
 if __name__ == "__main__":
-    # Ensures that the superclass "Proced_REG" is only executed when the script is run directly
-    app = Proced_REG()
+    # Ensures that the superclass "Quanta" is only executed when the script is run directly
+    app = Quanta_app()
     app.mainloop()
