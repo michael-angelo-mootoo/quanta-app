@@ -99,10 +99,10 @@ def reg_cond():
     cond2 = input_processing(input(f"Enter the dataset for {nam2}: "))
     return [cond1, cond2, nam1, nam2]
 
-print("------------------------------------------------------------------------------------------------------")
-print("      MANN-WHITNEY U-TEST CALCULATOR -- TWO TAILED HYPOTHESIS (NON-PARAMETRIC STATISTICAL TEST)")
-print("                  (Make sure to input your data using commas as separators)")
-print("------------------------------------------------------------------------------------------------------")
+print("|------------------------------------------------------------------------------------------------------|")
+print("|      MANN-WHITNEY U-TEST CALCULATOR -- TWO TAILED HYPOTHESIS (NON-PARAMETRIC STATISTICAL TEST)       |")
+print("|                  (Make sure to input your data using commas as separators)                           |")
+print("|------------------------------------------------------------------------------------------------------|")
 op_vals = test_cond()
 condition1 = op_vals[0]
 condition2 =  op_vals[1]
